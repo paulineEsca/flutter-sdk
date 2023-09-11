@@ -53,3 +53,8 @@ dependencies {
     implementation "com.onfido.sdk.capture:onfido-capture-sdk:$onfidoSdkVersion"
     implementation "com.onfido.sdk:onfido-workflow:$onfidoSdkVersion"
 }
+
+configurations{
+    all*.exclude module 'conceal'
+    all*exclude module 'bcprov-jdk15on'
+}
